@@ -1,0 +1,164 @@
+
+footer { 
+  position: relative;
+  top:110px;
+  display: flex;
+  width: 100%;
+  background: #333;
+  height: 300px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.footer-main{
+	background-color: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-main .footer-left,
+.footer-main .footer-center,
+.footer-main .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-main .footer-left{
+	width: 40%;
+}
+
+/* O logo do site */
+
+.foote-main h3{
+	color:  #ffffff;
+	margin: 0;
+}
+
+.footer-main h3 img{
+	width:150px; 
+    height: 100px;
+}
+
+/* Footer links */
+
+.footer-main .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-main .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+        font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-main .footer-links a:hover{
+	color:  #fff34d;
+}
+
+.footer-main .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-main .footer-center{
+	width: 35%;
+}
+
+.footer-main .footer-center ul li{
+    padding: 6px 0px;
+}
+
+
+.footer-main .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-main .footer-center p span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-main .footer-center p a{
+	color:  rgb(32, 193, 251);
+	text-decoration: none;;
+}
+
+.footer-main .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-main .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-main .footer-right{
+	width: 20%;
+}
+
+.footer-main .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-main .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+	.footer-main{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	
+	.footer-main .footer-left,
+	.footer-main .footer-center,
+	.footer-main .footer-right{
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		margin: 15px;
+	}
+	.footer-main .footer-center ul{
+		list-style: none;
+	}
+	
+  }
